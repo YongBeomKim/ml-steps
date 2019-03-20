@@ -9,3 +9,4 @@ Django 예제들
 - 4th umpire [GitHub](https://github.com/aasis21/4th_umpire)
 - django crud [GitHub](https://github.com/rayed/django_crud)
 - spam filtering [GitHub](https://github.com/aditya98ak/spam-ham-web-app)
+- sales predict [GitHub](https://github.com/rshrc/sales-forecast-ml#using-the-pickle-library-to-load-and-use-pre-trained-ml-models)
