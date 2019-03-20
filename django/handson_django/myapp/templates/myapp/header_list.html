@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Site</title>
+</head>
+<body>
+    <div id="main">
+        <h1>여행계획</h1>
+        <a href="{% url 'my:record-new' %}">신규등록</a>
+        <table>
+            <tr>
+                <th>업데이트 날짜</th>
+                <th>수정하기</th>
+            </tr>
+            {% for record in object_list %}
+                <tr>
+                    <td>{{ record.update_at }}</td>
+                    <td><a href="{% url 'my:record-edit' record.id %}">편집</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

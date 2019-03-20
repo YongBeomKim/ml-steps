@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Handsontable</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "lib/handsontable.css" %}" />
+  </head>
+  <body>
+    <!-- id="grid" Handsontable 스타일 값을 추가합니다 -->
+    <div id="grid"></div>
+    {% csrf_token %}
+    <button type="button" id="add">인덱스 추가</button>
+    <button type="button" id="save">저장하기</button>
+    <a href="{% url 'my:record-index' %}">목록보기</a>
+
+    <script src="{% static "lib/handsontable.full.min.js" %}"></script>
+    <script src="{% static "lib/js.cookie.js" %}"></script>
+    <script src="{% static "js/myscript.js" %}"></script>
+  </body>
+</html>
